@@ -23,8 +23,26 @@ repositories {
     mavenCentral()
 }
 
-
 dependencies {
     compile('org.springframework.boot:spring-boot-starter')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
+
+jar {
+    enabled = true
+}
+
+bootJar {
+    classifier = 'boot'
+}
+
+springBoot {
+    mainClassName = 'com.mirocupak.seedna.SeeDnaApplication'
+}
+
+bootJar {
+    manifest {
+        attributes 'Start-Class': 'com.mirocupak.seedna.SeeDnaApplication'
+    }
+}
+

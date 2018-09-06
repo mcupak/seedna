@@ -5,10 +5,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SeednaApplication implements CommandLineRunner {
+public class SeeDnaApplication implements CommandLineRunner {
 
     public static void main(String[] args) {
-        SpringApplication.run(SeednaApplication.class, args);
+        SpringApplication.run(SeeDnaApplication.class, args);
     }
 
     @Override
