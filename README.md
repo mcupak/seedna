@@ -1,4 +1,4 @@
-# seedna
+# seeDNA [![Build Status](https://travis-ci.org/mcupak/seedna.svg?branch=master)](https://travis-ci.org/mcupak/seedna) [![GitHub license](https://img.shields.io/badge/license-apache2-blue.svg)](https://raw.githubusercontent.com/mcupak/seedna/master/LICENSE)
 
 A command-line tool for generating images based from genetic data.
 

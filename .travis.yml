@@ -1,0 +1,10 @@
+language: java
+sudo: false
+jdk:
+  - openjdk10
+branches:
+  only:
+    - master
+    - develop
+script:
+  - ./gradlew test
