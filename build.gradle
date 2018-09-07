@@ -10,6 +10,10 @@ buildscript {
     }
 }
 
+plugins {
+    id 'io.franzbecker.gradle-lombok' version '1.14'
+}
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
@@ -17,7 +21,7 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'com.mirocupak'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 1.8
+sourceCompatibility = 10
 
 repositories {
     mavenCentral()
@@ -25,7 +29,9 @@ repositories {
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter')
+    compile('com.beust:jcommander:1.72')
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile("org.assertj:assertj-core:3.11.1")
 }
 
 jar {
@@ -37,12 +43,16 @@ bootJar {
 }
 
 springBoot {
-    mainClassName = 'com.mirocupak.seedna.SeeDnaApplication'
+    mainClassName = 'com.mirocupak.seedna.application.SeeDnaApplication'
 }
 
 bootJar {
     manifest {
-        attributes 'Start-Class': 'com.mirocupak.seedna.SeeDnaApplication'
+        attributes 'Start-Class': 'com.mirocupak.seedna.application.SeeDnaApplication'
     }
 }
 
+lombok {
+    version = '1.18.2'
+    sha256 = ""
+}
