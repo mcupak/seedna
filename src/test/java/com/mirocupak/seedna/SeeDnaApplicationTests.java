@@ -1,5 +1,6 @@
-package com.mirocupak.seedna.application;
+package com.mirocupak.seedna;
 
+import com.mirocupak.seedna.SeeDnaApplication;
 import com.mirocupak.seedna.service.util.InputFormat;
 import com.mirocupak.seedna.service.util.OutputFormat;
 import org.junit.After;
