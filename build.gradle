@@ -30,6 +30,7 @@ repositories {
 dependencies {
     compile('org.springframework.boot:spring-boot-starter')
     compile('com.beust:jcommander:1.72')
+    compile('com.univocity:univocity-parsers:2.7.5')
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile("org.assertj:assertj-core:3.11.1")
 }
@@ -43,12 +44,12 @@ bootJar {
 }
 
 springBoot {
-    mainClassName = 'com.mirocupak.seedna.application.SeeDnaApplication'
+    mainClassName = 'com.mirocupak.seedna.SeeDnaApplication'
 }
 
 bootJar {
     manifest {
-        attributes 'Start-Class': 'com.mirocupak.seedna.application.SeeDnaApplication'
+        attributes 'Start-Class': 'com.mirocupak.seedna.SeeDnaApplication'
     }
 }
 
