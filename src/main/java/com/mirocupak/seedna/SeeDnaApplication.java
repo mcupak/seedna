@@ -25,10 +25,10 @@ public class SeeDnaApplication implements CommandLineRunner {
 
     private class Arguments {
 
-        @Parameter(names = {"--inputPath", "-i"}, description = "Input path")
+        @Parameter(names = {"--inputPath", "-i"}, description = "Location of the input file")
         private String inputPath = "input.txt";
 
-        @Parameter(names = {"--outputPath", "-o"}, description = "Output path")
+        @Parameter(names = {"--outputPath", "-o"}, description = "Location of the output file")
         private String outputPath = "output.png";
 
         @Parameter(names = {"--inputFormat", "-if"}, description = "Input format")
